@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Pembahasan Try Out 2 TKA Biologi</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap">
+<style>
+:root{
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+  --bg:#f7f6f1; --card:#ffffff; --ink:#1b2620; --muted:#5b675f; --line:#d9dccf;
+  --ok:#1f6b45; --ok-bg:#e3f2e8; --bad:#a53b2a; --bad-bg:#fbeae6;
+  --key:#2c4f7c; --key-bg:#e7eef7;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#121815; --card:#1a231e; --ink:#e8eee9; --muted:#9aa89f; --line:#2c3a32;
+    --ok:#7fd1a0; --ok-bg:#183326; --bad:#f0a091; --bad-bg:#3a1f1a;
+    --key:#9bbbe8; --key-bg:#1b2a40;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#121815; --card:#1a231e; --ink:#e8eee9; --muted:#9aa89f; --line:#2c3a32;
+  --ok:#7fd1a0; --ok-bg:#183326; --bad:#f0a091; --bad-bg:#3a1f1a;
+  --key:#9bbbe8; --key-bg:#1b2a40;
+}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.7 "Source Serif 4",Georgia,serif}
+main{max-width:720px;margin:0 auto;padding:28px 18px 64px}
+h1,h2,h3{font-family:"Bricolage Grotesque","Segoe UI",system-ui,sans-serif;line-height:1.2;margin:0}
+h1{font-size:clamp(28px,6vw,40px);font-weight:700;letter-spacing:-.02em}
+.sub{color:var(--muted);margin:8px 0 24px}
+.key{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;margin:0 0 40px}
+.key a{display:block;text-decoration:none;color:var(--ink);background:var(--card);border:1px solid var(--line);border-radius:10px;padding:10px 6px;text-align:center}
+.key a:focus-visible,.key a:hover{outline:2px solid var(--key);outline-offset:2px}
+.key b{display:block;font:700 13px "Bricolage Grotesque",system-ui,sans-serif;color:var(--muted)}
+.key span{display:block;font:700 20px "Bricolage Grotesque",system-ui,sans-serif;color:var(--ok)}
+.key small{font:600 15px "Bricolage Grotesque",system-ui,sans-serif;color:var(--ok)}
+section.q{margin:0 0 56px}
+h2{font-size:24px;font-weight:700;margin-bottom:6px}
+.topic{color:var(--muted);font-size:15px;margin:0 0 14px}
+.stem{background:var(--card);border-left:4px solid var(--key);padding:14px 16px;border-radius:0 10px 10px 0;margin:0 0 14px}
+.stem p{margin:0 0 8px}.stem p:last-child{margin:0}
+ol.opt{list-style:upper-alpha;margin:0 0 18px;padding:0;display:grid;gap:8px}
+ol.opt li{margin-left:26px;padding:8px 12px;border:1px solid var(--line);border-radius:10px;background:var(--card)}
+ol.opt li::marker{font-family:"Bricolage Grotesque",system-ui,sans-serif;font-weight:700}
+ol.opt li.ok{border-color:var(--ok);background:var(--ok-bg);font-weight:600}
+.ans{display:inline-block;background:var(--ok);color:var(--bg);font:700 15px "Bricolage Grotesque",system-ui,sans-serif;padding:4px 12px;border-radius:999px;margin:0 0 12px}
+h3{font-size:18px;margin:20px 0 6px}
+.concept{background:var(--key-bg);border-radius:10px;padding:12px 16px;margin:0 0 12px}
+.concept p{margin:0}
+ul.why{margin:0;padding:0;list-style:none;display:grid;gap:8px}
+ul.why li{background:var(--bad-bg);border-radius:10px;padding:8px 12px;font-size:16px}
+ul.why b{color:var(--bad);font-family:"Bricolage Grotesque",system-ui,sans-serif}
+.tbl{overflow-x:auto;margin:0 0 14px}
+table{border-collapse:collapse;width:100%;min-width:480px;font-size:16px;background:var(--card)}
+th,td{border:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top}
+th{font-family:"Bricolage Grotesque",system-ui,sans-serif;font-size:14px;color:var(--muted)}
+td.y{color:var(--ok);font-weight:700;white-space:nowrap}td.n{color:var(--bad);font-weight:700;white-space:nowrap}
+p{margin:0 0 10px}
+footer{color:var(--muted);font-size:14px;border-top:1px solid var(--line);padding-top:14px}
+@media(max-width:480px){body{font-size:16px}.key{grid-template-columns:repeat(3,1fr)}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<main>
+<h1>Pembahasan Try Out 2 TKA Biologi</h1>
+<p class="sub">Kunci jawaban dan penjelasan untuk soal nomor 1–5, lengkap dengan alasan setiap pilihan yang salah.</p>
+
+<nav class="key" aria-label="Kunci jawaban">
+  <a href="#s1"><b>No. 1</b><span>B</span></a>
+  <a href="#s2"><b>No. 2</b><small>2, 3, 5</small></a>
+  <a href="#s3"><b>No. 3</b><span>D</span></a>
+  <a href="#s4"><b>No. 4</b><span>D</span></a>
+  <a href="#s5"><b>No. 5</b><span>A</span></a>
+</nav>
+
+<!-- 1 -->
+<section class="q" id="s1">
+  <h2>Soal 1</h2>
+  <p class="topic">Klasifikasi filogenetik: struktur homolog dan analog</p>
+  <div class="stem"><p>Kelelawar (mamalia), kolibri (aves), dan kupu-kupu (insekta) sama-sama bisa terbang dan makan nektar, tetapi dalam klasifikasi modern berada di kelompok berbeda. Apa alasan utama mereka tidak dikelompokkan bersama menurut prinsip filogenetik?</p></div>
+  <ol class="opt">
+    <li>Jenis makanan berbeda berubah sesuai perkembangan evolusi</li>
+    <li class="ok">Sayap memiliki struktur embriologi dan anatomi yang berbeda</li>
+    <li>Cara hidup berbeda menyesuaikan dengan seleksi alam</li>
+    <li>Alat reproduksi mempunyai struktur anatomi dan fisiologi berbeda</li>
+    <li>Perilaku mencari makan dan mempertahankan diri berbeda</li>
+  </ol>
+  <span class="ans">Jawaban: B</span>
+  <h3>Konsep kunci</h3>
+  <div class="concept"><p>Klasifikasi filogenetik mengelompokkan makhluk hidup menurut <b>hubungan kekerabatan evolusi</b> (leluhur bersama), bukan menurut kesamaan fungsi. Kesamaan fungsi pada organ yang asal-usulnya berbeda disebut <b>struktur analog</b>, hasil dari evolusi konvergen. Organ analog tidak bisa dipakai untuk menentukan kekerabatan.</p></div>
+  <h3>Pembahasan</h3>
+  <p>Ketiga hewan memakai sayap untuk terbang, tetapi asal sayapnya berbeda:</p>
+  <p><b>Kelelawar:</b> sayap adalah tungkai depan yang dimodifikasi. Tulang jarinya memanjang dan di antaranya terbentang membran kulit.<br>
+  <b>Kolibri:</b> sayap juga tungkai depan yang dimodifikasi, tetapi permukaannya tersusun dari bulu.<br>
+  <b>Kupu-kupu:</b> sayap adalah tonjolan dinding tubuh (kutikula/eksoskeleton), bukan tungkai, dan tidak punya tulang.</p>
+  <p>Perbedaan perkembangan embrio dan anatomi ini menunjukkan sayap ketiganya muncul sendiri-sendiri (analog) untuk fungsi yang sama. Karena itu "bisa terbang" bukan bukti kekerabatan. Ciri homolog yang menentukan kekerabatan justru berbeda: kelelawar berambut dan menyusui (mamalia), kolibri berbulu dan bertelur dengan rangka bertulang (aves), kupu-kupu bertubuh beruas dengan eksoskeleton dan tiga pasang kaki (insekta).</p>
+  <h3>Mengapa pilihan lain salah</h3>
+  <ul class="why">
+    <li><b>A.</b> Jenis makanan adalah adaptasi, bukan ciri yang menentukan kekerabatan.</li>
+    <li><b>C.</b> Seleksi alam adalah penyebab terbentuknya kemiripan fungsi (konvergensi), bukan dasar pengelompokan filogenetik.</li>
+    <li><b>D.</b> Alat reproduksi memang berbeda, tetapi soal menanyakan alasan atas kemiripan yang ditampilkan, yaitu kemampuan terbang. Jawabannya adalah asal-usul sayap.</li>
+    <li><b>E.</b> Perilaku bukan ciri utama dalam klasifikasi filogenetik karena tidak mencerminkan asal-usul struktur tubuh.</li>
+  </ul>
+</section>
+
+<!-- 2 -->
+<section class="q" id="s2">
+  <h2>Soal 2</h2>
+  <p class="topic">Prinsip kunci determinasi dikotomi</p>
+  <div class="stem"><p>Siswa merancang pengelompokan 10 jenis daun dengan sistem dikotomi. Langkah rancangan manakah yang sesuai prinsip dikotomi? (pilih semua yang benar)</p></div>
+  <div class="tbl"><table>
+    <tr><th>No.</th><th>Langkah</th><th>Benar?</th></tr>
+    <tr><td>1</td><td>Mencari informasi nama latin tanaman yang daunnya dijadikan sampel</td><td class="n">Salah</td></tr>
+    <tr><td>2</td><td>Mengamati ciri morfologi yang tampak pada daun</td><td class="y">Benar</td></tr>
+    <tr><td>3</td><td>Menentukan ciri pembeda untuk membagi 2 kelompok</td><td class="y">Benar</td></tr>
+    <tr><td>4</td><td>Mengukur panjang daun dan mengurutkan sesuai ukuran</td><td class="n">Salah</td></tr>
+    <tr><td>5</td><td>Menyusun hasil analisis menjadi kunci dikotomi</td><td class="y">Benar</td></tr>
+  </table></div>
+  <span class="ans">Jawaban: 2, 3, dan 5</span>
+  <h3>Konsep kunci</h3>
+  <div class="concept"><p>Kunci dikotomi adalah kunci identifikasi yang <b>setiap tahapnya memberi dua pilihan yang saling berlawanan</b> (misalnya daun tunggal atau majemuk, tepi rata atau bergerigi), berdasarkan ciri yang bisa diamati. Pilihan yang dipilih akan mengarahkan ke tahap berikutnya sampai ke takson tertentu.</p></div>
+  <h3>Pembahasan</h3>
+  <p>Urutan merancangnya: <b>amati</b> ciri morfologi (2), <b>pilih ciri pembeda</b> yang membagi sampel menjadi dua kelompok kontras (3), lalu <b>susun</b> hasil pembagian itu menjadi kunci bertahap (5).</p>
+  <p><b>Pernyataan 1 salah.</b> Nama latin adalah hasil identifikasi. Kunci dikotomi dibuat justru agar jenis bisa dikenali lewat ciri yang terlihat, tanpa harus tahu namanya lebih dulu.</p>
+  <p><b>Pernyataan 4 salah.</b> Mengurutkan berdasarkan ukuran hanya membuat deret berjenjang. Ukuran bersifat kontinu dan bervariasi antarindividu, sehingga tidak membagi sampel menjadi dua kelompok yang jelas berlawanan.</p>
+</section>
+
+<!-- 3 -->
+<section class="q" id="s3">
+  <h2>Soal 3</h2>
+  <p class="topic">Tingkat keanekaragaman hayati</p>
+  <div class="stem"><p>Ayam bekisar adalah hasil persilangan ayam hutan hijau jantan (<i>Gallus varius</i>) dengan ayam kampung betina (<i>Gallus gallus domesticus</i>). Keturunannya steril dan penampilannya berbeda dari kedua induknya. Penjelasan yang tepat tentang keanekaragaman antara ayam hutan, ayam kampung, dan ayam bekisar adalah ....</p></div>
+  <ol class="opt">
+    <li>Keanekaragaman tingkat gen karena dapat terjadi perkawinan silang</li>
+    <li>Keanekaragaman tingkat gen karena merupakan variasi dalam satu genus</li>
+    <li>Keanekaragaman tingkat jenis karena morfologi hasil persilangan berbeda</li>
+    <li class="ok">Keanekaragaman tingkat jenis karena melibatkan dua spesies berbeda</li>
+    <li>Keanekaragaman ekosistem karena ketiganya hidup dalam habitat berbeda</li>
+  </ol>
+  <span class="ans">Jawaban: D</span>
+  <h3>Konsep kunci</h3>
+  <div class="concept"><p><b>Tingkat gen:</b> variasi di dalam satu spesies (contoh: berbagai ras ayam kampung). <b>Tingkat jenis:</b> perbedaan antarspesies. <b>Tingkat ekosistem:</b> perbedaan komunitas dan lingkungan abiotiknya.</p></div>
+  <h3>Pembahasan</h3>
+  <p>Nama ilmiahnya berbeda pada kata kedua: <i>Gallus varius</i> dan <i>Gallus gallus</i>. Jadi keduanya <b>satu genus (<i>Gallus</i>) tetapi dua spesies berbeda</b>.</p>
+  <p>Bukti kuat bahwa keduanya spesies berbeda adalah keturunannya <b>steril</b>. Menurut konsep spesies biologis, anggota satu spesies bisa kawin dan menghasilkan keturunan yang subur. Hibrida steril menunjukkan adanya isolasi reproduksi pascazigot antara dua spesies. Karena melibatkan dua spesies, keanekaragaman ini berada pada <b>tingkat jenis</b>.</p>
+  <h3>Mengapa pilihan lain salah</h3>
+  <ul class="why">
+    <li><b>A.</b> Perkawinan silang yang menghasilkan keturunan subur terjadi dalam satu spesies (tingkat gen). Di sini keturunannya steril, jadi bukan tingkat gen.</li>
+    <li><b>B.</b> Fakta satu genus benar, tetapi variasi gen terjadi di dalam satu spesies, bukan antarspesies.</li>
+    <li><b>C.</b> Tingkat jenis benar, tetapi alasannya keliru. Perbedaan morfologi tidak menentukan spesies, sebab ras ayam kampung pun berbeda morfologinya padahal satu spesies.</li>
+    <li><b>E.</b> Soal tidak membahas habitat atau interaksi dengan lingkungan, jadi tidak berkaitan dengan tingkat ekosistem.</li>
+  </ul>
+</section>
+
+<!-- 4 -->
+<section class="q" id="s4">
+  <h2>Soal 4</h2>
+  <p class="topic">Kepunahan varietas lokal dan pelestarian lewat budidaya</p>
+  <div class="stem">
+    <p>Data varietas padi lokal:</p>
+    <div class="tbl"><table>
+      <tr><th>Varietas</th><th>Tahun</th><th>Ketahanan</th><th>Rasa</th><th>Kondisi 2024</th></tr>
+      <tr><td>Sleman</td><td>1980</td><td>Sangat tinggi</td><td>Enak</td><td>Tidak ditemukan</td></tr>
+      <tr><td>Rojo lele</td><td>1985</td><td>Tinggi</td><td>Sangat enak</td><td>Tidak ditemukan</td></tr>
+      <tr><td>Pandan wangi</td><td>1990</td><td>Sedang</td><td>Istimewa</td><td>Masih dibudidayakan</td></tr>
+      <tr><td>Memberamo</td><td>2010</td><td>Rendah</td><td>Sangat enak</td><td>Langka</td></tr>
+    </table></div>
+    <p>Varietas lokal berkurang produktivitasnya karena kalah bersaing dengan padi unggul modern. Jika masyarakat berhenti membudidayakannya secara masal, apa yang terjadi pada pandan wangi dan memberamo 20 tahun yang akan datang?</p>
+  </div>
+  <ol class="opt">
+    <li>Pandan wangi akan punah sedangkan memberamo akan berkembang karena rasanya enak</li>
+    <li>Pandan wangi maupun memberamo akan tetap lestari karena rasanya yang istimewa</li>
+    <li>Memberamo memiliki risiko terbesar untuk punah karena ketahanannya yang rendah, sedangkan pandan wangi dapat bertahan</li>
+    <li class="ok">Keduanya memiliki risiko kepunahan yang tinggi, mengikuti pola varietas Rojolele dan Sleman</li>
+    <li>Statusnya akan tetap sama seperti sekarang, pandan wangi dibudidayakan dan memberamo tetap langka</li>
+  </ol>
+  <span class="ans">Jawaban: D</span>
+  <h3>Konsep kunci</h3>
+  <div class="concept"><p>Padi adalah tanaman budidaya. Kelestariannya bergantung pada manusia yang terus menanamnya, bukan pada sifat unggulnya saja. Bila budidaya berhenti, varietas yang tidak dilindungi akan hilang.</p></div>
+  <h3>Pembahasan</h3>
+  <p>Cara membaca data: bandingkan varietas yang sudah <b>tidak ditemukan</b> dengan sifatnya. Sleman punya ketahanan <i>sangat tinggi</i> dan Rojolele punya ketahanan <i>tinggi</i> dengan rasa <i>sangat enak</i>, tetapi keduanya tetap hilang. Artinya <b>ketahanan dan rasa tidak menjamin varietas lestari</b>. Yang menentukan adalah apakah varietas itu masih ditanam.</p>
+  <p>Pandan wangi hanya bertahan karena "masih dibudidayakan". Jika budidaya dihentikan, ia kehilangan satu-satunya alasan tetap ada. Memberamo sudah berstatus langka, sehingga makin rentan. Keduanya akan mengikuti pola Sleman dan Rojolele.</p>
+  <h3>Mengapa pilihan lain salah</h3>
+  <ul class="why">
+    <li><b>A.</b> Rasa enak tidak menyelamatkan varietas. Rojolele sangat enak tetapi sudah tidak ditemukan. Memberamo yang sudah langka tidak mungkin berkembang tanpa budidaya.</li>
+    <li><b>B.</b> Rasa istimewa bukan jaminan, dengan alasan yang sama seperti pilihan A.</li>
+    <li><b>C.</b> Ketahanan rendah bukan faktor penentu. Sleman yang ketahanannya sangat tinggi saja punah. Pandan wangi (ketahanan sedang) juga tidak aman tanpa budidaya.</li>
+    <li><b>E.</b> Status pandan wangi bergantung pada budidaya. Jika budidaya berhenti, statusnya tidak mungkin tetap "masih dibudidayakan".</li>
+  </ul>
+</section>
+
+<!-- 5 -->
+<section class="q" id="s5">
+  <h2>Soal 5</h2>
+  <p class="topic">Pasteurisasi dan endospora bakteri</p>
+  <div class="stem"><p>Dalam kasus keracunan makanan, ditemukan dua bakteri: <i>Bacillus cereus</i> (gram positif, pembentuk spora) dan <i>E. coli</i> (gram negatif). Setelah pasteurisasi, beberapa hari kemudian masih ada pertumbuhan bakteri pada sisa sampel makanan. Bakteri manakah yang masih bertahan setelah pasteurisasi?</p></div>
+  <ol class="opt">
+    <li class="ok"><i>Bacillus cereus</i> karena mampu membentuk endospora yang tahan panas</li>
+    <li><i>E. coli</i> karena membran luarnya yang tebal melindungi dari panas</li>
+    <li>Bakteri baru hasil kontaminasi karena kedua bakteri telah mati</li>
+    <li><i>E. coli</i> karena mempunyai plasmid yang mengandung gen resisten panas</li>
+    <li><i>Bacillus cereus</i> karena dinding peptidoglikan yang tebal melindungi sel</li>
+  </ol>
+  <span class="ans">Jawaban: A</span>
+  <h3>Konsep kunci</h3>
+  <div class="concept"><p>Pasteurisasi memakai suhu yang relatif rendah (misalnya sekitar 63 °C selama 30 menit atau 72 °C selama 15 detik). Suhu ini membunuh <b>sel vegetatif</b> tetapi <b>tidak membunuh endospora</b>.</p></div>
+  <h3>Pembahasan</h3>
+  <p>Endospora adalah bentuk dorman yang dibuat beberapa bakteri gram positif, termasuk <i>Bacillus</i>, saat kondisi buruk. Strukturnya berlapis (korteks dan lapisan pelindung spora), kadar airnya sangat rendah, dan mengandung kalsium dipikolinat. Ini membuatnya tahan panas, pengeringan, dan bahan kimia.</p>
+  <p>Setelah pasteurisasi, sel vegetatif <i>B. cereus</i> dan <i>E. coli</i> mati, tetapi spora <i>B. cereus</i> bertahan. Saat kondisi kembali baik (suhu hangat, ada nutrisi), spora berkecambah menjadi sel vegetatif dan bakteri tumbuh lagi. Inilah sebabnya pertumbuhan muncul beberapa hari kemudian.</p>
+  <h3>Mengapa pilihan lain salah</h3>
+  <ul class="why">
+    <li><b>B.</b> <i>E. coli</i> tidak membentuk spora. Membran luar gram negatif melindungi dari beberapa zat kimia, bukan dari panas.</li>
+    <li><b>C.</b> Soal menyebut pertumbuhan terjadi pada sisa sampel, dan ada bakteri yang jelas bisa bertahan (spora). Tidak ada dasar menyimpulkan kontaminasi baru.</li>
+    <li><b>D.</b> Plasmid umumnya membawa gen resistensi antibiotik, bukan ketahanan panas. <i>E. coli</i> tetap berupa sel vegetatif yang mati oleh pasteurisasi.</li>
+    <li><b>E.</b> Organisme yang benar, tetapi alasannya keliru. Peptidoglikan tebal memberi kekuatan dinding sel, bukan ketahanan terhadap panas. Bakteri gram positif tanpa spora tetap mati saat pasteurisasi.</li>
+  </ul>
+</section>
+
+<footer>Ringkasan kunci: 1-B, 2-(2, 3, 5), 3-D, 4-D, 5-A.</footer>
+</main>
+</body>
+</html>
